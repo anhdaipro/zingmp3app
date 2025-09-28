@@ -1,5 +1,23 @@
 {
-  "extends": "@react-native/typescript-config",
-  "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["**/node_modules", "**/Pods"]
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "types": ["react", "react-native", "react-native-vector-icons"],
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@form/*": ["src/form/*"],
+      "@services/*": ["src/services/*"],
+      "@screens/*": ["src/screens/*"],
+      "@utils/*": ["src/utils/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@type/*": ["src/types/*"],
+      "@api/*": ["src/api/*"],
+      "@store/*": ["src/store/*"],
+      "@styles/*": ["src/styles/*"],
+      "@navigation/*": ["src/navigation/*"],
+      "@constant/*": ["src/constant/*"],
+      "@context/*": ["src/context/*"]
+    }
+  },
+  
 }
